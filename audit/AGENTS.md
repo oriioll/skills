@@ -13,8 +13,8 @@ When the user types `/audit` (optionally followed by `fix`, `report`, `quick`, a
 3. Without `fix`, the audit is **read-only**: do not modify any file.
 4. With `fix`: apply mechanical fixes automatically, but ask once for confirmation before applying user-visible copy, legal pages, cookie consent, rate limiting, dependency changes or anything that changes existing runtime behaviour. Never commit, delete files, rewrite git history, or invent business data (use `[PLACEHOLDERS]`).
 5. Report concisely: top priorities first, then a findings table with file:line, severity (Critical/Important/Nice), brief fix and effort.
-
-If the skill folder is not found, tell the user where to install it (see below) instead of improvising the checklist.
+6. Hold the quality bar defined in SKILL.md ("Quality bar"): production-grade, expert-level findings and fixes, verified, root-cause, no hacks or low-value noise.
+   If the skill folder is not found, tell the user where to install it (see below) instead of improvising the checklist.
 
 ## Installing the skill (one source of truth)
 
