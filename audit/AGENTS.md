@@ -10,6 +10,7 @@ When the user types `/audit` (optionally followed by `fix`, `report`, `quick`, a
 
 1. Read `.agents/skills/audit/SKILL.md` and follow it exactly.
 2. Load only the files in `.agents/skills/audit/references/` that SKILL.md points to for the requested categories.
+   In fix mode, build the Site Brief first (`references/site-brief.md`) and follow `references/seo-production-playbook.md`; with `--url=<origin>`, verify using `scripts/seo-verify.mjs`.
 3. Without `fix`, the audit is **read-only**: do not modify any file.
 4. With `fix`: apply mechanical fixes automatically, but ask once for confirmation before applying user-visible copy, legal pages, cookie consent, rate limiting, dependency changes or anything that changes existing runtime behaviour. Never commit, delete files, rewrite git history, or invent business data (use `[PLACEHOLDERS]`).
 5. Report concisely: top priorities first, then a findings table with file:line, severity (Critical/Important/Nice), brief fix and effort.
